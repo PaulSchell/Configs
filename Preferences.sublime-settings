@@ -1,0 +1,26 @@
+{
+	"auto_indent": true,
+	"auto_match_enabled": true,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"default_encoding": "UTF-8",
+	"dictionary": "Packages/Language - English/en_US.dic",
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		80
+	],
+	"smart_indent": true,
+	"soda_classic_tabs": false,
+	"soda_folder_icons": true,
+	"tab_size": 4,
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
+
