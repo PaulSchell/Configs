@@ -1,0 +1,7 @@
+[user]
+	name = PaulSchell
+	email = paul.schell87@gmail.com
+[credential]
+	helper = osxkeychain
+[push]
+	default = matching
