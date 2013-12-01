@@ -7,11 +7,47 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+#tmux colors
+alias tmux="TERM=screen-256color-bce tmux"
 
-# Set to this to use case-sensitive completion
+#Example aliases
+alias zsh="vi ~/.zshrc"
+#alias ohmyzsh="vi ~/.oh-my-zsh"
+
+#Mysql Shortcuts
+alias mysqlstart='sudo /usr/local/mysql/support-files/mysql.server start'
+alias mysqlstop='sudo /usr/local/mysql/support-files/mysql.server stop'
+
+#Apache Shortcuts
+alias apestart='sudo /usr/sbin/apachectl start'
+alias apestop='sudo /usr/sbin/apachectl stop'
+alias apesreload='sudo /usr/sbin/apachectl restart'
+
+#vim config
+alias vimrc='vi ~/.vimrc'
+alias v='vim'
+
+#pygments, syntax highlighting
+alias c="pygmentize -g"
+
+#gzip size
+#alias gz="gzip -c $1 | wc -c"
+#alias gz="echo -e compressed: $(gzip -c $1 | wc -c)\n normal: $(du -sch $1)"
+alias gz="printf ' %f %f' gzip -c $1 | wc -c;  du -sch $1"
+
+#extract
+alias extract="tar -xvf $1 $1"
+
+#mkdir and init git repo
+#alias mdgit
+function mdgit() {
+    mkdir -pv $1 && cd $1 && git init
+}
+
+#get directory size
+alias="du -sch $1"
+
+#Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
 # Uncomment this to disable bi-weekly auto-update checks
@@ -40,7 +76,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git python )
 
 source $ZSH/oh-my-zsh.sh
 
